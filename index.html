@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction & Decoration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">🏗️ DecoBuild</div>
+    <nav>
+      <ul>
+        <li><a href="#home">မူလစာမျက်နှာ</a></li>
+        <li><a href="#services">ဝန်ဆောင်မှုများ</a></li>
+        <li><a href="#portfolio">လုပ်ငန်းနမူနာများ</a></li>
+        <li><a href="#booking">Online Booking</a></li>
+        <li><a href="#contact">ဆက်သွယ်ရန်</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1>အိမ်ဆောက်လုပ်ရေးနှင့် အလှဆင်</h1>
+    <p>အရည်အသွေးမြင့် ဝန်ဆောင်မှုများကို စိတ်ချယုံကြည်စွာပေးဆောင်ပါသည်။</p>
+    <a href="#booking" class="btn">Online Booking</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>📌 ဝန်ဆောင်မှုများ</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>🏠 အိမ်ဆောက်လုပ်ရေး</h3>
+        <p>နောက်ဆုံးပေါ်နည်းပညာနဲ့ အိမ်များတည်ဆောက်ပေးသည်။</p>
+      </div>
+      <div class="service">
+        <h3>🎨 အလှဆင်ပန်းချီ</h3>
+        <p>အလှဆင်နည်းစုံနဲ့ တင့်တယ်စွာဖန်တီးပေးသည်။</p>
+      </div>
+      <div class="service">
+        <h3>🛋️ Interior Design</h3>
+        <p>ခေတ်မီ Interior Design ကို တိကျစွာ ဆောင်ရွက်ပေးသည်။</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <h2>📸 လုပ်ငန်းနမူနာများ</h2>
+    <div class="portfolio-filter">
+      <button onclick="filterPortfolio('all')">All</button>
+      <button onclick="filterPortfolio('house')">House</button>
+      <button onclick="filterPortfolio('office')">Office</button>
+      <button onclick="filterPortfolio('deco')">Decoration</button>
+    </div>
+    <div class="portfolio-gallery">
+      <img src="images/project1.jpg" class="house" alt="House Project">
+      <img src="images/project2.jpg" class="office" alt="Office Project">
+      <img src="images/project3.jpg" class="deco" alt="Decoration Project">
+      <img src="images/project4.jpg" class="house" alt="House Project">
+      <img src="images/project5.jpg" class="office" alt="Office Project">
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="booking">
+    <h2>📅 Online Booking</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="အမည်" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <select id="service" required>
+        <option value="">ဝန်ဆောင်မှုရွေးပါ</option>
+        <option value="အိမ်ဆောက်လုပ်ရေး">အိမ်ဆောက်လုပ်ရေး</option>
+        <option value="အလှဆင်ပန်းချီ">အလှဆင်ပန်းချီ</option>
+        <option value="Interior Design">Interior Design</option>
+      </select>
+      <input type="date" id="date" required>
+      <button type="submit">Booking ပေးပို့မယ်</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>📞 ဆက်သွယ်ရန်</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="အမည်" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="သင့်စာသား" required></textarea>
+      <button type="submit">ပို့မယ်</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 DecoBuild | ဆောက်လုပ်ရေးနှင့် အလှဆင်</p>
+    <a href="admin.html" target="_blank">Admin Panel</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
